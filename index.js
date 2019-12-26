@@ -7,5 +7,25 @@ function handleClick(e) {
 
 /* End Given Code, don't edit above here...*/
 
-/* Write your implementation of greet() */
-/* Write your implementation of displayMessage() */
+function greet(time){
+  let hour = time.slice(0,2);
+
+  if (hour < 17) {
+    return "Good Afternoon";
+  } else if (hour >= 17) {
+    return "Good Evening";
+  } else {
+    return "Good Morning";
+  }
+
+}
+
+/*function displayMessage(){
+  alert('TEST');
+}
+*/
+
+function displayMessage(greeting) {
+  let element = document.getElementById('greeting');
+  element.innerText = greeting;
+}
