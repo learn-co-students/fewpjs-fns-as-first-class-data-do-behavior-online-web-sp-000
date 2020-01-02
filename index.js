@@ -2,7 +2,7 @@
 
 function handleClick(e) { // called when a user clicks a link or button - the 
   // e can be called anything
-  debugger
+ // debugger
   const timeString = document.getElementById('time').value
   displayMessage(greet(timeString))
 }
@@ -39,7 +39,7 @@ function handleClick(e) { // called when a user clicks a link or button - the
       // let greeting = greet(time); 
       // // console.log(greeting);
       // document.getElementsByTagName('h1').append
-          debugger // simliar to binding.pry
+         // debugger // simliar to binding.pry
       // document.getElementsByTagName('h1')[0].textContent = message;
          document.getElementsByTagName('h1')[0].innerText = message;
   }
