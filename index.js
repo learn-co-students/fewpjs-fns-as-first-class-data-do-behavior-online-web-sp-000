@@ -8,7 +8,7 @@ function handleClick(e) {
 function displayMessage(message) {
   // body...
   let element = document.getElementById("greeting");
-  element.innerHTML = message;
+  element.innerText = message;
 }
 
 function greet(time) {
