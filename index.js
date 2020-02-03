@@ -7,5 +7,24 @@ function handleClick(e) {
 
 /* End Given Code, don't edit above here...*/
 
-/* Write your implementation of greet() */
+function greet(timeString) {
+  let currentTime = timeString.split(':');
+  let strippedTime = parseInt(currentTime, [0])
+
+   if (strippedTime < 12){
+    return `Good Morning`;
+  }
+   if (strippedTime > 12 && strippedTime < 17) {
+     return `Good Afternoon`;
+   }
+   if (strippedTime > 17) {
+     return `Good Evening`;
+  }
+
+}
+
+function displayMessage(content) {
+  document.querySelector('#greeting').innerText = `${content}`
+
+}
 /* Write your implementation of displayMessage() */
