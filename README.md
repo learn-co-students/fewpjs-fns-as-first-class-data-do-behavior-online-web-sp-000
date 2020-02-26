@@ -13,13 +13,14 @@ gathered by an `<input>` field to a helper function.
 
 ## Create a "First-Class" Function
 
-We're going to create a web greeting! You're provided text input field in which
+We're going to create a web greeting  ! You're provided text input field in which
 you should enter a time in [24 hour time][24]. When you click the `Submit`
 button, some provided code will run which will make calls to **two** functions.
 
 ## The `greet()` function
 
 The `greet` function should take one argument, a `String` which specifies the
+
 24-hour time in the format `HH:MM`.
 
 - If the time is earlier than 12pm, return "Good Morning".
