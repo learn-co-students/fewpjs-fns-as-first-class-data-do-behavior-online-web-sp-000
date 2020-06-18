@@ -11,3 +11,34 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
+
+function greet(time) {
+
+  let the_time = time.split(":")
+  let hours = parseFloat(the_time[0])
+
+ 
+
+  if(hours < 12) {
+    return "Good Morning"
+  }
+
+  else if (hours >= 12 && hours <= 17) {
+		return "Good Afternoon"
+  }
+
+  else if (hours > 17) {
+    return "Good Evening"
+  }
+
+  else {
+    return "Incorrect format"
+  }
+}
+
+
+function displayMessage(string) {
+	document.querySelector("#greeting").innerText = string
+	return
+}
+
