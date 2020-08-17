@@ -10,4 +10,18 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
+function greet(timeString) {
+  if (timeString < "12:00") {
+    return "Good Morning"
+  } else if (timeString > "12:00" && timeString < "17:00") {
+    return "Good Afternoon"
+  } else {
+    return "Good Evening"
+  }
+}
+
+
 /* Write your implementation of displayMessage() */
+function displayMessage(greeting) {
+  const newGreeting = document.querySelector("h1").textContent(greeting)
+}
