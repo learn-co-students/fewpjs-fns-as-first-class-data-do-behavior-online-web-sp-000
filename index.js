@@ -24,12 +24,3 @@ function greet(string) {
 function displayMessage(string) {
   document.getElementById("greeting").innerText = string;
 }
-
-// describe("displayMessage() function", () => {
-//     it("updates the DOM with an appropriate message", () => {
-//       let testContent = "TEST"
-//       displayMessage(testContent)
-//       let content = document.getElementById("greeting").innerText
-//       expect(content).to.equal(testContent)
-//     })
-//   })
