@@ -10,4 +10,26 @@ function handleClick(e) {
 /* End Given Code, don't edit above here...*/
 
 /* Write your implementation of greet() */
+function greet(string) {
+  if (parseInt(string) < 12) {
+    return "Good Morning";
+  } else if (parseInt(string) >= 12 && parseInt(string) < 17 ) {
+    return "Good Afternoon";
+  } else {
+    return "Good Evening";
+  }
+}
+
 /* Write your implementation of displayMessage() */
+function displayMessage(string) {
+  document.getElementById("greeting").innerText = string;
+}
+
+// describe("displayMessage() function", () => {
+//     it("updates the DOM with an appropriate message", () => {
+//       let testContent = "TEST"
+//       displayMessage(testContent)
+//       let content = document.getElementById("greeting").innerText
+//       expect(content).to.equal(testContent)
+//     })
+//   })
