@@ -22,6 +22,7 @@ function greet(timeStamp) {
 }
 
 /* Write your implementation of displayMessage() */
-function displayMessage() {
+function displayMessage(message) {
+  document.getElementById
 
 }
