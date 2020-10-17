@@ -11,3 +11,17 @@ function handleClick(e) {
 
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
+
+greet(){
+  if (time < 12pm){
+    console.log("Good Morning")
+  } else if ( 12pm > time < 5pm) {
+    console.log("Good Afternoon")
+  } else {
+    console.log("Good Evening")
+  }
+}
+
+displayMessage(){
+
+}
