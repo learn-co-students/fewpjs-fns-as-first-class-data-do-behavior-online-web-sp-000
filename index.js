@@ -10,7 +10,9 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 function greet(response) {
 if(parseInt(response) < 12) {
+  //parseInt used to take in a string but retur a Intager 
   return 'Good Morning';
+  // return the String value of Good Morin
 }
   
 else if(parseInt(response) > 12 && parseInt(response) < 17 ) {
