@@ -12,16 +12,25 @@ function handleClick(e) {
 /* Write your implementation of greet() */
 /* Write your implementation of displayMessage() */
 
-greet(){
-  if (time < 12pm){
-    console.log("Good Morning")
-  } else if ( 12pm > time < 5pm) {
-    console.log("Good Afternoon")
+function greet(time){
+  var hour = parseInt(time);
+
+  if(hour < 12){
+    console.log('time', time)
+    return "Good Morning"
+
+  } else if(12 < hour && hour < 17){
+    console.log('time', time)
+    return "Good Afternoon"
+
   } else {
-    console.log("Good Evening")
+    console.log('time', time)
+    return "Good Evening"
   }
 }
 
-displayMessage(){
-
+function displayMessage(msg){
+  let greeting = document.getElementById('greeting');
+  greeting.innerText = msg;
+  return greeting;
 }
