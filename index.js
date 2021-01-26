@@ -1,5 +1,3 @@
-/* Given Code, don't edit */
-
 document.querySelector("button").addEventListener("click", handleClick);
 
 function handleClick(e) {
@@ -7,7 +5,15 @@ function handleClick(e) {
   displayMessage(greet(timeString))
 }
 
-/* End Given Code, don't edit above here...*/
+function greet(string) {
+  const time = parseInt(string, 10)
+  if (time < 12) 
+    return `Good Morning`;
+  if (time > 17)
+    return `Good Evening`;
+  return `Good Afternoon`;
+}
 
-/* Write your implementation of greet() */
-/* Write your implementation of displayMessage() */
+function displayMessage(string) {
+  document.getElementById('greeting').innerText = string
+}
