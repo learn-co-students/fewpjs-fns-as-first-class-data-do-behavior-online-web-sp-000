@@ -17,7 +17,7 @@ function greet(time){
     let t = time.split("");
     t.splice(-3, 1);
     t = t.join("");
-    i = parseInt(t);
+    let i = parseInt(t);
     return i;
   }
 
