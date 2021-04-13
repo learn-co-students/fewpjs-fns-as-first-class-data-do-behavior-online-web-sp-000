@@ -11,21 +11,20 @@ function handleClick(e) {
 
 function greet(timeString) { 
   let string_numbers = timeString.split(':');
-  console.log(string_numbers);
-  let integer_one = parseInt(string_numbers[0], 10);
-  let integer_two = parseInt(string_numbers[1], 10);
-  let integer_time = integer_one + ":" + integer_two;
-  if integer_time < "12:00" {
-  return "Good Morning";
+  let integer_hour = parseInt(string_numbers[0], 10);
+  if (integer_hour < 12) {
+  return `Good Morning`;
   }
-  if integer_time > "12:00" < "17:00" { 
-    return "Good Afternoon";
+  else if (integer_hour > 12 && integer_hour < 17) { 
+  return `Good Afternoon`;
   }
-
+  else if (integer_hour > 17) {
+  return `Good Evening`;
+  }
 }
 
-function displayMessage(greet(timeString)) {
- document.querySelector("#greeting").textContent = greet(timeString);
+function displayMessage(string) {
+ document.querySelector("#greeting").innerText = string;
 }
 
 /* Write your implementation of greet() */
