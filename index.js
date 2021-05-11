@@ -21,7 +21,7 @@ function greet(time) {
   }
   if (time > 5) {
     return "Good Evening"
-  } f
+  }
 }
 /* Write your implementation of displayMessage() */
 function displayMessage(message) {
