@@ -24,7 +24,7 @@ function greet(time) {
   }
 }
 /* Write your implementation of displayMessage() */
-function displayMessage(message) {
+window.onload = function displayMessage(message = "something") {
   let item = document.querySelector("h1#greeting")
   item.innerHTML = message
 }
