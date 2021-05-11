@@ -1,5 +1,4 @@
 /* Given Code, don't edit */
-
 document.querySelector("button").addEventListener("click", handleClick);
 
 function handleClick(e) {
@@ -24,7 +23,7 @@ function greet(time) {
   }
 }
 /* Write your implementation of displayMessage() */
-window.onload = function displayMessage(message = "something") {
+function displayMessage(message = "something") {
   let item = document.querySelector("h1#greeting")
   item.innerHTML = message
 }
