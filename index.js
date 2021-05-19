@@ -30,5 +30,5 @@ function displayMessage(string){
   console.log(string);
   
   let location = document.getElementById('greeting');
-  location.textContent = string;
+  location.innerText = string;
 }
